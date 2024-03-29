@@ -6,11 +6,10 @@
     <meta name="keywords" content="sameera madushan software engineer fullstack developer programming">
     <meta name="author" content="sameera madushan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Sameera Madushan</title>
 
-    <link rel="stylesheet" href="assests/style/header.css">
     <link rel="stylesheet" href="assests/style/normalize.css">
-    <link rel="stylesheet" href="assests/style/home.css">
+    <link rel="stylesheet" href="assests/style/style.css">
 </head>
 
 <body>
@@ -28,11 +27,11 @@
     </nav>
 </header>
 <!--Home Design-->
-<section id="home">
+<section id="home" class="home">
     <div>
         <h3>"Hello.."</h3>
-        <h1 id="myName">I AM<br>SAMEERA<br>MADUSHAN</h1>
-        <h3>I am a passionate Software Engineer</h3>
+        <h1 id="myName">I AM <span>SAMEERA</span><br>MADUSHAN<br>SILVA</h1>
+        <h3>A passionate Software Engineer..</h3>
         <p>
             HEY THERE! I THRIVE ON CURIOSITY AND LOVE TO DIVE INTO NEW THINGS, ALWAYS EAGER TO LEARN ABOUT THE LATEST TRENDS AND INNOVATIVE IDEAS IN THE EVER-EVOLVING TECH LANDSCAPE.
         </p>
@@ -42,34 +41,32 @@
     </div>
 </section>
 
-<section id="about">
-    <div>
-        <h1>ABOUT ME</h1>
-        <h2>ASPIRING SOFTWARE ENGINEER</h2>
-        <p>
-            I am a passionate Software Engineering Undergraduate,  Developer, UI/UX Designer and a Freelancer with a knack for exploring the world of technology.
-        </p>
-    </div>
-
-    <div>
+<section id="about" class="about">
+    <div class="about-section">
+    <div class="about-img">
         <img src="assests/images/aboutPic.png" alt="aboutPic.png" title="sameera" width="200" height="200">
     </div>
 
-    <div>
+    <div class="about-content">
+        <h1><span>ABOUT</span> ME</h1>
+        <h3>ASPIRING SOFTWARE ENGINEER</h3>
         <p>
-            Full Name:<br>
-            Sameera Madushan silva<br>
-            Email:<br>
+            I am a passionate Software Engineering Undergraduate,  Developer, UI/UX Designer and a Freelancer with a knack for exploring the world of technology.
+        </p>
+        <p>
+            <span>Full Name:</span>
+            Sameera Madushan Silva<br>
+            <span>Email:</span>
             madushansameera499@gmail.com<br>
-            School:<br>
+            <span>School:</span>
             Ananda College Colombo 10
         </p>
-
         <button type="button">DOWNLOAD CV</button>
+    </div>
     </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="skills">
     <h1>SKILLS</h1>
     <img src="assests/icons/java.png" alt="java.png" title="java" width="50" height="50">
     JAVA
@@ -81,7 +78,7 @@
     PYTHON
 </section>
 
-<section id="services">
+<section id="services" class="services">
     <h1>MY SERVICES</h1>
 
     <div>
@@ -112,7 +109,7 @@
     </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="projects">
 <h1>LATEST PROJECTS</h1>
     <div>
 
@@ -126,7 +123,7 @@
     </div>
 </section>
 
-<section id="contact me">
+<section id="contact me" class="contact me">
     <h1>Contact Me!</h1>
     <h5>
         Have a project in mind?<br>
@@ -136,9 +133,15 @@
     </h5>
 </section>
 
-<footer>
-    Copyright &copy; | 2024 Sameera Madushan
-    <button type="button">&#8679; </button>
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; | 2024 Sameera Madushan</p>
+    </div>
+    <div>
+        <button type="button">
+            <a href="#home"> &#8679; </a>
+        </button>
+    </div>
 </footer>
 
 </body>
