@@ -360,10 +360,13 @@ p {
         text-align: center;
     }
 
+    .about-img{
+        align-content: center;
+    }
 
     .about-img img{
         width: 70vw;
-        height: 70vh;
+        height: 60vh;
 
         margin-top: 4rem;
         margin-left: 10rem;
