@@ -128,6 +128,10 @@ h1 {
 
 }
 
+.home>div>h3>span{
+    color: #B336FF;
+}
+
 .home>div>h1>span{
     color: #B336FF;
 }
@@ -234,6 +238,63 @@ p {
     color: white;
 }
 
+/*---------------------------education-------------------------------------*/
+
+.education{
+    background-color: #252C37;
+}
+
+
+#mouse{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+}
+
+
+#mouse>h2{
+    font-size: 350%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+#mouse>aside:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 40vw;
+    right: 15%;
+    top: 38%;
+    position: relative;
+}
+
+
+#mouse>div{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    position: relative;
+
+}
+
+#mouse>div>aside {
+    width: 30vw;
+    font-size: 20px;
+    position: relative;
+    left: 7%;
+    bottom: 150px;
+    letter-spacing: 2px;
+
+
+
+}
+
 
 /*services*/
 
@@ -322,8 +383,6 @@ p {
     border:.2rem solid #B336FF;
     box-shadow: 0 0 1.4rem #B336FF;
     margin-bottom: 8rem;
-    align-content: center;
-    width: 60vw;
 }
 
 .heading span{
@@ -340,6 +399,25 @@ p {
 
 .contact-me p{
     font-size: 1.8rem;
+}
+
+.fa {
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: #B336FF solid 4px;
+    border-radius: 100%;
+    color: #B336FF;
+    background-color: #4B5567;
+    box-shadow: 0 0 1.4rem #B336FF;
+}
+
+.fa:hover {
+    color: white;
+    background-color: #B336FF;
+
 }
 
 .footer{
@@ -373,165 +451,10 @@ p {
 
 .footer div button:hover{
     box-shadow: 0 0 1rem #B336FF;
+
 }
 
 .header.sticky{
     border-bottom: .1rem solid rgba(0,0,0,.2);
 }
 
-
-
-
-
-
-/*breakpoints*/
-
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 2%; /* Adjusted padding */
-    }
-
-    section {
-        padding: 12rem 2% 2rem; /* Adjusted padding */
-    }
-
-    .services {
-        padding-bottom: 4rem; /* Adjusted padding */
-    }
-
-    .portfolio {
-        padding-bottom: 4rem; /* Adjusted padding */
-    }
-
-    .contact {
-        min-height: auto;
-    }
-
-    .footer {
-        padding: 2rem 2%; /* Adjusted padding */
-    }
-}
-
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: relative; /* Changed position */
-        top: initial;
-        left: initial;
-        width: 100%;
-        padding: 1rem 2%; /* Adjusted padding */
-        background: #13171F;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 2rem 0; /* Adjusted margin */
-    }
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .home-content h1 {
-        font-size: 4.5rem; /* Adjusted font size */
-    }
-
-    .home>div>img {
-        width: 70vw!important;
-        margin-top: 2rem; /* Adjusted margin */
-    }
-
-
-    .about {
-        padding-top: 4rem;
-    }
-
-    .about-section{
-        flex-direction: column-reverse;
-
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about-content{
-        padding-top: 0;
-        align-content: center;
-        text-align: center;
-    }
-
-    .about-img{
-        align-content: center;
-        padding: 0;
-        width: fit-content;
-    }
-
-    .about-img img{
-        width: 70vw;
-        height: 60vh;
-
-        margin-top: 4rem;
-        margin-left: 0;
-    }
-
-    .services h2{
-        margin-bottom: 3rem;
-    }
-
-}
-
-@media (max-width:617px){
-    .container{
-        grid-template-columns:1fr;
-    }
-
-
-
-}
-
-@media (max-width:450px){
-
-
-}
-
-@media (max-width:365px) {
-    .home-img img {
-        width: 90vw;
-
-    }
-
-
-    .about-img img {
-        width: 90vw;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-}
