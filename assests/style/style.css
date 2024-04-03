@@ -410,7 +410,7 @@ p {
     padding: 1rem 1rem 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1.4rem #B336FF;
-
+    max-height: 350px;
 
     transition: .5s ease;
     transform: rotate(-2deg);
@@ -422,8 +422,8 @@ p {
 }
 
 .projects-box img{
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    height: 80%;
     object-fit: cover;
     border-radius: 0.5rem;
 
