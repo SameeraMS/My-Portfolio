@@ -18,7 +18,7 @@
     }
 
     .services {
-        padding-bottom: 4rem; /* Adjusted padding */
+        padding-bottom: 1rem; /* Adjusted padding */
     }
 
     .portfolio {
@@ -31,6 +31,10 @@
 
     .footer {
         padding: 2rem 2%; /* Adjusted padding */
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
@@ -120,6 +124,10 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .contact-me{
+        padding: 10rem 5% 1rem;
+    }
+
 }
 
 @media (max-width:617px){
@@ -128,7 +136,7 @@
     }
 
     .grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 
