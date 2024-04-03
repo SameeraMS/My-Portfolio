@@ -1,6 +1,6 @@
 
 body{
-    background: #06142F;
+    background: #040f26;
     display: block;
     color-scheme: dark;
 
@@ -304,17 +304,17 @@ p {
 /*skills*/
 
 .skills-title{
+    font-size: 2.3rem;
     display: grid;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 1.5rem;
     text-align: center;
-
+    margin-top: 3rem;
 }
 
 .skills div h2{
-    font-size: 2rem;
     color: white;
 }
 
