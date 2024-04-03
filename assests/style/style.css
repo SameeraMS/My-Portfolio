@@ -301,6 +301,43 @@ p {
 }
 
 
+/*skills*/
+
+.skills-title{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+.skills div h2{
+    font-size: 2rem;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-item{
+    display: flex;!important;
+    align-items: center;
+    gap: .75rem;
+}
+
+.grid-item img{
+    width: 100px;
+}
+
+.item-text{
+    text-align: start;
+}
 
 /*services*/
 
