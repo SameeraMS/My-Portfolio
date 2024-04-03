@@ -87,7 +87,7 @@ nav{
     background-size: cover;
     background-position: center;
     width: 33px;
-    height: 44px;
+    height: 45px;
     cursor: pointer;
 }
 
@@ -99,7 +99,6 @@ nav{
 }
 
 section{
-    min-height: 100vh;
     padding: 8rem 2% 2rem;
     overflow: hidden;
 }
@@ -395,12 +394,50 @@ p {
 
 }
 
+/*projects*/
+
+.projects-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 2rem;
+    padding: 2rem;
+    overflow: scroll;
+}
+
+.projects-box{
+    background: #4B5567;
+    padding: 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.4rem #B336FF;
 
 
+    transition: .5s ease;
+    transform: rotate(-2deg);
+    overflow: hidden;
+}
 
+.projects-box:hover{
+    transform: rotate(0deg);
+}
 
+.projects-box img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+    border-radius: 0.5rem;
 
+}
 
+.projects-box h5{
+    padding: 1rem 0;
+    color: #B336FF;
+}
+
+.projects-box h4{
+    font-size: 1rem;
+    color: white;
+}
 
 
 
