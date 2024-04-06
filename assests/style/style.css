@@ -1,6 +1,12 @@
+:root {
+    --bg-color: #040f26;
+    --second-bg-color:#252C37;
+    --text-color: #fff;
+    --main-color: #7e0fb4;
+}
 
 body{
-    background: #040f26;
+    background: var(--bg-color);
     display: block;
     color-scheme: dark;
 
@@ -20,7 +26,7 @@ body{
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: #B336FF;
+    background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem #252C37;
     font-size: 1.3rem;
@@ -33,7 +39,7 @@ body{
 
 .btn:hover {
     background: rgba(179, 54, 255, 0.3);
-    box-shadow: 0 0 1rem #B336FF;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .name {
@@ -42,60 +48,6 @@ body{
     font-weight: 600;
     cursor: default;
     margin-left: 1.5rem;
-}
-
-header{
-    background-color: rgba(29, 33, 46, 0.61);
-    backdrop-filter: blur(10px);
-
-    color: white;
-    height: 90px;
-    width: 100vw;
-    box-sizing: border-box;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    display: flex;
-
-    align-items: center;
-}
-
-nav{
-    display: block;
-    unicode-bidi: isolate;
-    position: absolute;
-    right: 0;
-    margin-right: 2rem;
-}
-
-.navbar>a {
-    font-size: 1.4rem;
-    color: white;
-    margin-left: 4rem;
-    transition: 0.3s;
-}
-
-.navbar>a:hover, .navbar>a.active {
-    color: #B336FF;
-}
-
-#logo{
-    background-image: url("/assests/images/logo.png");
-    background-size: cover;
-    background-position: center;
-    width: 33px;
-    height: 45px;
-    cursor: pointer;
-}
-
-
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 section{
@@ -117,7 +69,7 @@ h3 {
     font-weight: 900;
     color: white;
     font-style: italic;
-   /* font-family: "Caveat", cursive;*/
+    /* font-family: "Caveat", cursive;*/
 }
 
 h1 {
@@ -129,16 +81,97 @@ h1 {
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-    color: #B336FF;
+    color: var(--main-color);
 
 }
 
+/*---------------------------Header Design-------------------------------------*/
+
+header{
+    background-color: rgba(29, 33, 46, 0.61);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    height: 90px;
+    width: 100vw;
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+
+    align-items: center;
+    z-index: 10;
+}
+
+nav{
+    display: block;
+    unicode-bidi: isolate;
+    position: absolute;
+    right: 0;
+    margin-right: 2rem;
+}
+
+.navbar>a {
+    font-size: 1.4rem;
+    color: white;
+    margin-left: 4rem;
+    transition: 0.3s;
+}
+
+.navbar>a:hover, .navbar>a.active {
+    color: var(--main-color);
+}
+
+#logo{
+    background-image: url("/assests/images/logo.png");
+    background-size: cover;
+    background-position: center;
+    width: 33px;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+.darkmode{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    z-index: 10;
+}
+
+.darkmode button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.darkmode button img{
+    width: 5rem;
+}
+
+/*---------------------------Home Design-------------------------------------*/
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .home>div>h3>span{
-    color: #B336FF;
+    color: var(--main-color);
 }
 
 .home>div>h1>span{
-    color: #B336FF;
+    color: var(--main-color);
 }
 
 #myName::first-line{
@@ -175,14 +208,14 @@ p {
 }
 
 
-/*about*/
+/*---------------------------About Design-------------------------------------*/
 
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: #252C37;
+    background: var(--second-bg-color);
 }
 
 .about-section{
@@ -220,7 +253,7 @@ p {
 
 .about-content h3{
     font-size: 2.3rem;
-    color: #B336FF;
+    color: var(--main-color);
     font-style: normal;
 }
 .about-content p {
@@ -229,7 +262,7 @@ p {
 }
 
 .about-content p span{
-    color: #B336FF;
+    color: var(--main-color);
 }
 
 .about-content button{
@@ -237,71 +270,208 @@ p {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: #B336FF;
+    background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
     color: white;
 }
 
-/*---------------------------education-------------------------------------*/
+/*---------------------------Education-------------------------------------*/
 
 .education{
-    background-color: #252C37;
+    background-color: var(--second-bg-color);
+
 }
 
 
-#mouse{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+
+/* Some Cool Stuff */
+.demo-card:nth-child(1) {
+    order: 1;
+}
+
+.demo-card:nth-child(2) {
+    order: 4;
+}
+
+.demo-card:nth-child(3) {
+    order: 2;
+}
+
+.demo-card:nth-child(4) {
+    order: 5;
+}
+
+.demo-card:nth-child(5) {
+    order: 3;
+}
+
+.demo-card:nth-child(6) {
+    order: 6;
+}
+
+
+
+/* Border Box */
+* {
+    box-sizing: border-box;
+}
+
+#timeline {
+    left: 0;
+    right: 0;
+    background: transparent;
+    opacity: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#timeline h1 {
     text-align: center;
+    font-size: 3rem;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+#timeline p.leader {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
 
 }
-
-
-#mouse>h2{
-    font-size: 350%;
+#timeline .demo-card-wrapper {
     position: relative;
+    margin: auto;
+    padding-top: 10px;
+}
+
+#timeline .demo-card-wrapper::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
     top: 0;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-
+    border-left: 1px solid rgba(191, 191, 191, 0.4);
 }
 
+#timeline .demo-card {
+    position: relative;
+    display: block;
+    margin: 1rem;
+    max-width: 50%;
+    right: 4rem;
+    z-index: 2;
+}
 
-
-#mouse>aside:nth-child(2) {
+#timeline .demo-card .head {
+    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 40vw;
-    right: 15%;
-    top: 38%;
-    position: relative;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
 }
-
-
-#mouse>div{
-    display: flex;
-    justify-content: center;
-    gap: 15vw;
-    position: relative;
-
+#timeline .demo-card .head .number-box {
+    display: inline;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.17);
 }
-
-#mouse>div>aside {
-    width: 30vw;
-    font-size: 20px;
-    position: relative;
-    left: 7%;
-    bottom: 150px;
+#timeline .demo-card .head h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: inherit;
     letter-spacing: 2px;
+    padding-bottom: 6px;
+    line-height: 1.5rem;
+}
 
+#timeline .demo-card .head h2 span {
+    display: block;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.2rem 0;
+}
 
+/*---------------------------------------------*/
+#timeline .demo-card .body {
+    /*background: #a9a9a9;*/
+    background: #4B5567;
+    border: 1px solid black;
+    border-top: 0;
+    padding: 15px;
+}
 
+#timeline .demo-card .body p {
+    font-size: 1rem;
+    line-height: 18px;
+    /*margin-bottom: 15px;*/
+}
+#timeline .demo-card .body img {
+    display: block;
+    width: 100%;
+}
+#timeline .demo-card--step1 {
+    background-color: #7e5e60;
+}
+#timeline .demo-card--step1 .head::after {
+    border-color: #98817b;
+}
+#timeline .demo-card--step2 {
+    background-color: #778899;
+    right: -23rem;
+}
+#timeline .demo-card--step2 .head::after {
+    border-color: #708090;
+}
+#timeline .demo-card--step3 {
+    background-color: #808080;
+}
+#timeline .demo-card--step3 .head::after {
+    border-color: #696969;
+}
+#timeline .demo-card--step4 {
+    background-color: #5e644f;
+    right: -23rem;
+}
+#timeline .demo-card--step4 .head::after {
+    border-color: #555d50;
+}
+#timeline .demo-card--step5 {
+    background-color: #4f666a;
+}
+#timeline .demo-card--step5 .head::after {
+    border-color: #536878;
+}
+
+#timeline .demo-card--step6 {
+    background-color: #635147;
+}
+#timeline .demo-card--step6 .head::after {
+    border-color: #483c32;
+}
+
+#timeline p{
+    margin: 0;
+}
+
+#timeline img{
+    margin-top: 15px;
+    width: 360px;
+    height: 130px;
 }
 
 
-/*skills*/
+
+
+/*---------------------------Skills Design-------------------------------------*/
 
 .skills-title{
     font-size: 2rem;
@@ -339,10 +509,10 @@ p {
     text-align: start;
 }
 
-/*services*/
+/*---------------------------Services Design-------------------------------------*/
 
 .services{
-    background: #252C37;
+    background: var(--second-bg-color);
 }
 
 .services h1{
@@ -368,9 +538,9 @@ p {
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border:.2rem solid #B336FF;
+    border:.2rem solid var(--main-color);
     transition: .5s ease;
-    box-shadow: 0 0 1.4rem #B336FF;
+    box-shadow: 0 0 1.4rem var(--main-color);
 }
 
 .services-container .services-box:hover{
@@ -394,7 +564,7 @@ p {
 
 }
 
-/*projects*/
+/*---------------------------Projects Design-------------------------------------*/
 
 .projects-container{
     margin-top: 2rem;
@@ -406,10 +576,10 @@ p {
 }
 
 .projects-box{
-    background: #4B5567;
+    background: var(--second-bg-color);
     padding: 1rem 1rem 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 1.4rem #B336FF;
+    box-shadow: 0 0 1.4rem var(--main-color);
     max-height: 350px;
 
     transition: .5s ease;
@@ -433,7 +603,7 @@ p {
 
 .projects-box h5{
     padding: 1rem 0;
-    color: #B336FF;
+    color: var(--main-color);
 }
 
 .projects-box h4{
@@ -451,7 +621,7 @@ p {
 
 
 
-/*assignments*/
+/*---------------------------Assignments Design-------------------------------------*/
 
 .assignments-container{
     margin-top: 2rem;
@@ -463,10 +633,10 @@ p {
 }
 
 .assignments-box{
-    background: #4B5567;
+    background: var(--second-bg-color);
     padding: 1rem 1rem 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 1.4rem #B336FF;
+    box-shadow: 0 0 1.4rem var(--main-color);
     max-height: 350px;
     overflow: hidden;
 
@@ -486,7 +656,7 @@ p {
 
 .assignments-box h5{
     padding: 1rem 0;
-    color: #B336FF;
+    color: var(--main-color);
 }
 
 .assignments-box h4{
@@ -509,12 +679,12 @@ p {
 
 
 
-/*contact me*/
+/*---------------------------Contact me Design-------------------------------------*/
 
 .contact-me{
     min-height: 60vh;
     padding: 10rem 14% 1rem;
-    background: #252C37;
+    background: var(--second-bg-color);
 
 }
 
@@ -524,8 +694,8 @@ p {
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border:.2rem solid #B336FF;
-    box-shadow: 0 0 1.4rem #B336FF;
+    border:.2rem solid var(--main-color);
+    box-shadow: 0 0 1.4rem var(--main-color);
     margin-bottom: 8rem;
 }
 
@@ -551,23 +721,23 @@ p {
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    border: #B336FF solid 4px;
+    border: var(--main-color) solid 4px;
     border-radius: 100%;
-    color: #B336FF;
+    color: var(--main-color);
     background-color: #4B5567;
-    box-shadow: 0 0 1.4rem #B336FF;
+    box-shadow: 0 0 1.4rem var(--main-color);
 }
 
 .fa:hover {
     color: white;
-    background-color: #B336FF;
+    background-color: var(--main-color);
 
 }
 
 
 
 
-/*footer*/
+/*---------------------------Footer Design-------------------------------------*/
 
 .footer{
     display: flex;
@@ -588,7 +758,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: #B336FF;
+    background: var(--main-color);
     border-radius: .8rem;
     transition: .5s ease;
 }
@@ -599,7 +769,7 @@ p {
 }
 
 .footer div button:hover{
-    box-shadow: 0 0 1rem #B336FF;
+    box-shadow: 0 0 1rem var(--main-color);
 
 }
 
