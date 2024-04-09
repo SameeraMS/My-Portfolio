@@ -2,7 +2,7 @@
     --bg-color: #040f26;
     --second-bg-color:#252C37;
     --text-color: #fff;
-    --main-color: #7e0fb4;
+    --main-color: #720da2;
 }
 
 body{
@@ -135,26 +135,57 @@ nav{
     cursor: pointer;
 }
 
-
-.darkmode{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    z-index: 10;
-}
-
-.darkmode button{
-    background-color: transparent;
-    border: none;
+/*---------------------------Mode Design-------------------------------------*/
+.mode{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
 }
 
-.darkmode button img{
-    width: 5rem;
+input[type = 'checkbox']{
+    position: absolute;
+    opacity: 0;
 }
 
+.moon{
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.5s ease;
+
+}
+
+.sun{
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    transform: scale(0);
+    transition: 0.5s ease;
+}
+
+.toggle{
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+input[type = 'checkbox']:checked~.moon{
+    transition-delay: 0s;
+    transform: rotate(360deg) scale(0);
+}
+
+input[type = 'checkbox']:checked~.sun{
+    transition-delay: 0s;
+    transform:  scale(1) rotate(360deg);
+}
 /*---------------------------Home Design-------------------------------------*/
 
 
@@ -419,10 +450,10 @@ p {
     width: 100%;
 }
 #timeline .demo-card--step1 {
-    background-color: #7e5e60;
+    background-color: #708090;
 }
 #timeline .demo-card--step1 .head::after {
-    border-color: #98817b;
+    border-color: #708090;
 }
 #timeline .demo-card--step2 {
     background-color: #778899;
@@ -432,30 +463,30 @@ p {
     border-color: #708090;
 }
 #timeline .demo-card--step3 {
-    background-color: #808080;
+    background-color: #708090;
 }
 #timeline .demo-card--step3 .head::after {
-    border-color: #696969;
+    border-color: #708090;
 }
 #timeline .demo-card--step4 {
-    background-color: #5e644f;
+    background-color: #708090;
     right: -23rem;
 }
 #timeline .demo-card--step4 .head::after {
-    border-color: #555d50;
+    border-color: #708090;
 }
 #timeline .demo-card--step5 {
-    background-color: #4f666a;
+    background-color: #708090;
 }
 #timeline .demo-card--step5 .head::after {
-    border-color: #536878;
+    border-color: #708090;
 }
 
 #timeline .demo-card--step6 {
-    background-color: #635147;
+    background-color: #708090;
 }
 #timeline .demo-card--step6 .head::after {
-    border-color: #483c32;
+    border-color: #708090;
 }
 
 #timeline p{
@@ -508,6 +539,49 @@ p {
 .item-text{
     text-align: start;
 }
+
+
+/*---------------------------Certification Design-------------------------------------*/
+
+
+.certification-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem 2rem;
+    padding: 3rem;
+    overflow: hidden;
+}
+
+.certification-box{
+    background: var(--second-bg-color);
+    padding: 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.4rem var(--main-color);
+    max-height: 350px;
+    overflow: hidden;
+
+}
+
+.certification-box:hover{
+    cursor: pointer;
+}
+
+.certification-box img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+}
+
+.certification-box h4{
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: white;
+}
+
+
 
 /*---------------------------Services Design-------------------------------------*/
 
@@ -672,10 +746,77 @@ p {
     text-align: center;
 }
 
+/*---------------------------Blogs Design-------------------------------------*/
 
+.blogs-container{
+    margin: 1.5rem;
+    display: block;
+    padding: 1rem;
+    overflow: hidden;
+}
 
+.blogs-box {
+    background: var(--second-bg-color);
+    padding: 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.4rem var(--main-color);
+    max-height: 200px;
+    overflow: hidden;
+    margin: 0 0 2rem 0;
 
+}
 
+.blogs-box:hover{
+    cursor: pointer;
+}
+
+.blogs-box a{
+    display: flex;
+}
+
+.blogs-box img{
+    width: 22%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+}
+
+.blogs-text{
+    padding: 0 1rem;
+}
+
+.blogs-text h3{
+    font-size: 2rem;
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.blogs-text h4{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
+.blogs-text h5{
+    font-size: 1.2rem;
+    padding: 0.7rem 0;
+    color: var(--main-color);
+}
+
+#btnBlogs{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    text-align: center;
+
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 2rem;
+}
 
 
 
@@ -717,7 +858,7 @@ p {
 
 .fa {
     padding: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;

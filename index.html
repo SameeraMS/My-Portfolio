@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sameera Madushan</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link rel="stylesheet" href="assests/style/normalize.css">
     <link rel="stylesheet" href="assests/style/style.css">
     <link rel="stylesheet" href="assests/style/responsive.css">
@@ -29,15 +30,14 @@
         <a href="#services" >Services</a>
         <a href="#projects" >Projects</a>
         <a href="#contact me" >Contact Me</a>
+        <label class="mode">
+            <input type="checkbox" id="mode-check">
+            <i class="fa-solid fa-sun sun"></i>
+            <i class="fa-solid fa-moon moon"></i>
+            <span class="toggle"></span>
+        </label>
     </nav>
 </header>
-
-<!-----------------------------Darkmode Design---------------------------------->
-
-<div class="darkmode">
-    <button><img src="assests/icons/darkmode.png" alt="darkmode" title="darkmode"></button>
-</div>
-
 
 <!-----------------------------Home Design---------------------------------->
 
@@ -319,6 +319,34 @@
     </div>
 </section>
 
+<!-----------------------------Certification Design---------------------------------->
+
+<section id="certification" class="certification">
+    <h1 class="heading">< CERTIFICATION /></h1>
+
+    <div class="certification-container">
+        <div class="certification-box">
+            <a href="https://github.com/SameeraMS/CSS-Assignment-3">
+                <img src="assests/images/project/assignment.jpg" alt="application" title="assignment 3">
+                <h4>Hacker Rank</h4>
+            </a>
+        </div>
+        <div class="certification-box">
+            <a href="https://github.com/SameeraMS/CSS-Assignment-3">
+                <img src="assests/images/project/assignment.jpg" alt="application" title="assignment 3">
+                <h4>Solo Learn</h4>
+            </a>
+        </div>
+        <div class="certification-box">
+            <a href="https://github.com/SameeraMS/CSS-Assignment-3">
+                <img src="assests/images/project/assignment.jpg" alt="application" title="assignment 3">
+                <h4>Dp Education</h4>
+            </a>
+        </div>
+
+    </div>
+
+</section>
 
 <!-----------------------------Services Design---------------------------------->
 
@@ -358,7 +386,7 @@
 <!-----------------------------Projects Design---------------------------------->
 
 <section id="projects" class="projects">
-    <h1 class="heading">LATEST PROJECTS</h1>
+    <h1 class="heading">< LATEST PROJECTS /></h1>
 
     <div class="projects-container">
         <div class="projects-box">
@@ -419,7 +447,7 @@
 <!-----------------------------Assignments Design---------------------------------->
 
 <section id="assignments" class="assignments">
-    <h1 class="heading">ASSIGNMENTS</h1>
+    <h1 class="heading">< ASSIGNMENTS /></h1>
 
     <div class="assignments-container">
         <div class="assignments-box">
@@ -457,6 +485,41 @@
 
 </section>
 
+<!-----------------------------Blogs Design---------------------------------->
+
+<section id="blogs" class="blogs">
+    <h1 class="heading">< BLOGS /></h1>
+
+    <div class="blogs-container">
+        <div class="blogs-box">
+            <a href="https://sameerams.medium.com/mastering-concurrency-a-guide-to-threads-in-java-f44843c87ebc">
+                <img src="assests/images/blogs/thread.jpg" alt="application" title="assignment 3">
+                <div class="blogs-text">
+                    <h3>A Guide to Threads in Java</h3>
+                    <h5>07-04-2024</h5>
+                    <h4>In this blog, we'll delve into the world of threads in Java, exploring their creation, lifecycle, synchronization mechanisms, and best practices. By the end, you'll possess the knowledge needed to harness the power of threads and unlock new levels of efficiency in your Java projects.</h4>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="blogs-box">
+            <a href="https://sameerams.medium.com/demystifying-git-a-comprehensive-guide-to-version-control-463515b5eef4">
+                <img src="assests/images/blogs/git.png" alt="application" title="assignment 3">
+                <div class="blogs-text">
+                    <h3>Git: A Comprehensive Guide to Version Control</h3>
+                    <h5>08-04-2024</h5>
+                    <h4>Git, a distributed version control system, has revolutionized the way teams collaborate and manage code. With its robust branching model, efficient merging capabilities, and decentralized architecture, Git empowers developers to work seamlessly across different environments and collaborate with ease.</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <a id="btnBlogs" href="https://sameerams.medium.com" target="_blank" class="btn"><h4>Read More >></h4></a>
+
+
+</section>
+
 <!-----------------------------Contact Design---------------------------------->
 
 <section id="contact me" class="contact-me">
@@ -472,11 +535,11 @@
             </p>
 
             <div class="social-media">
-                <a href="mailto:madushansameera499@gmail.com" target="_blank" class="fa fa-envelope"></a>
-                <a href="https://www.facebook.com/profile.php?id=100009945902233&sk=about" class="fa fa-facebook"></a>
-                <a href="https://www.linkedin.com/in/sameera-madushan-61ba9a278/" class="fa fa-linkedin"></a>
-                <a href="https://www.instagram.com/_.samee._2002_/" class="fa fa-instagram"></a>
-                <a href="https://github.com/SameeraMS" class="fa fa-github"></a>
+                <a href="mailto:madushansameera499@gmail.com" target="_blank" class="fa fa-solid fa-envelope"></a>
+                <a href="https://www.facebook.com/profile.php?id=100009945902233&sk=about" class="fa fa-brands fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/sameera-madushan-61ba9a278/" class="fa fa-brands fa-linkedin"></a>
+                <a href="https://www.instagram.com/_.samee._2002_/" class="fa fa-brands fa-instagram"></a>
+                <a href="https://github.com/SameeraMS" class="fa fa-brands fa-github"></a>
             </div>
         </div>
         </form>
