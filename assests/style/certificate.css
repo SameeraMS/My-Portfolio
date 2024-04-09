@@ -1,0 +1,134 @@
+:root {
+    --bg-color: #040f26;
+    --second-bg-color:#252C37;
+    --text-color: #fff;
+    --main-color: #720da2;
+}
+
+body{
+    background: var(--bg-color);
+    display: block;
+    color-scheme: dark;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #252C37;
+    font-size: 1.3rem;
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    border: white 2px solid;
+}
+
+.btn:hover {
+    background: rgba(179, 54, 255, 0.3);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.name {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+    margin-left: 1.5rem;
+}
+
+section{
+    padding: 8rem 2% 2rem;
+    overflow: hidden;
+}
+
+div {
+    display: block;
+}
+
+h3 {
+    display: block;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    unicode-bidi: isolate;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    /* font-family: "Caveat", cursive;*/
+}
+
+h1 {
+    font-size: 5.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    color: var(--main-color);
+
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.2rem;
+}
+
+/*---------------------------Certificate Design-------------------------------------*/
+.certification-container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem 2rem;
+    padding: 3rem;
+    overflow: hidden;
+}
+
+.certification-box{
+    background: var(--second-bg-color);
+    padding: 1rem 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1.4rem var(--main-color);
+    max-height: 350px;
+    overflow: hidden;
+
+}
+
+.certification-box:hover{
+    cursor: pointer;
+}
+
+.certification-box img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+}
+
+.certification-box img:hover{
+    transform: scale(1.1);
+    transition: .9s ease;
+}
+
+.certification-box h4{
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: white;
+}

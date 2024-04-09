@@ -547,7 +547,7 @@ p {
 .certification-container{
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2rem 2rem;
     padding: 3rem;
     overflow: hidden;
@@ -575,12 +575,28 @@ p {
 
 }
 
+.certification-box img:hover{
+    transform: scale(1.1);
+    transition: .9s ease;
+}
+
 .certification-box h4{
     padding: 1rem 0;
     font-size: 1rem;
     color: white;
 }
 
+#hackerrank div{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+#sololearn div{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+#uom div{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
 
 /*---------------------------Services Design-------------------------------------*/
