@@ -3,6 +3,26 @@
         font-size: 55%;
     }
 
+    section {
+        padding: 12rem 2% 2rem; /* Adjusted padding */
+    }
+
+    .about-img>img{
+        width: 29vw;
+        height: 58vh;
+
+    }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .contact-container{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+    }
+
     .grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
@@ -32,7 +52,7 @@
     }
 
     section {
-        padding: 12rem 2% 2rem; /* Adjusted padding */
+        padding: 11rem 2% 2rem; /* Adjusted padding */
     }
 
     .services {
@@ -41,6 +61,12 @@
 
     .portfolio {
         padding-bottom: 4rem; /* Adjusted padding */
+    }
+
+    .about-img>img{
+        width: 34vw;
+        height: 55vh;
+
     }
 
     .contact {
@@ -67,30 +93,58 @@
 }
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
+
+    .menu-btn {
+        display: block !important;
+        right: 1.7rem;
+        position: absolute;
+        font-size: 4rem;
+    }
+
+    .menu-btn.active::before{
+        content: '\f00d';
+    }
+
+    .mode{
+        margin-left:1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .mode i{
+        font-size: 3.5rem;
+        color: white;
     }
 
     .navbar {
-        position: relative; /* Changed position */
-        top: initial;
-        left: initial;
-        width: 100%;
+        width: 80%;
         padding: 1rem 2%; /* Adjusted padding */
-        background: #13171F;
-        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        display: none;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 10;
+        background-color: rgba(29, 33, 46, 0.94);
+        backdrop-filter: blur(10px);
+        border: 2px solid var(--second-bg-color);
+        border-top: none;
+        transform: scale(0);
+        transition: all 0.3s ease-in-out;
+        transform-origin: top right;
+        transition-delay: 0.01s;
+
     }
 
     .navbar.active {
         display: block;
+        transform: scale(1);
+        margin-right: 0;
     }
 
     .navbar a {
         display: block;
-        font-size: 2rem;
-        margin: 2rem 0; /* Adjusted margin */
+        font-size: 3rem;
+        margin: 2.2rem 2rem; /* Adjusted margin */
+        color: white;
     }
 
     .home {
@@ -124,8 +178,14 @@
 
     .about-content{
         padding-top: 0;
-        align-content: center;
         text-align: center;
+    }
+
+    .about-content ul {
+        margin-left: 50%;
+        transform: translateX(-40%);
+        text-align: left;
+        width: 53%;
     }
 
     .about-img{
@@ -135,11 +195,31 @@
     }
 
     .about-img img{
-        width: 70vw;
-
-
+        width: 37vw;
+        height: 41vh;
         margin-top: 4rem;
         margin-left: 0;
+    }
+
+    .education-grid {
+        margin-top: 3rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .certification-container{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #hackerrank div{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #sololearn div{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    #uom div{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .services h2{
@@ -180,8 +260,28 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .contact-container{
+        width: 40rem;
+    }
 
+    .services-container {
+        width: 40rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
 
+    .about-img img {
+        width: 56vw;
+        height: 38vh;
+    }
+
+    .about-content ul {
+        transform: translate(-75%);
+    }
+
+    .about-content > ul > li > span:first-child {
+        width: 12rem;
+    }
 }
 
 @media (max-width:450px){

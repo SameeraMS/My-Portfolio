@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="hii..! I am sameera madushan silva">
-    <meta name="keywords" content="sameera madushan software engineer fullstack developer programming">
+    <meta name="keywords" content="sameera madushan software engineer fullstack developer programming, sameera madushan, Sameera Madushan Portfolio, sameera madushan portfolio, Portfolio">
     <meta name="author" content="sameera madushan">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="This portfolio website showcases the work and expertise of Sameera Madushan,
+     a Full Stack Developer from Sri Lanka. The website provides information about the developer, including skills,
+     completed projects, and contact details. It also highlights the services offered, such as Application Development,
+     Web Development, and UI/UX Design. Visitors can explore the latest projects and assignments completed by the
+     developer."
+    >
     <title>Sameera Madushan</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -23,6 +30,7 @@
 <header>
     <div id="logo"></div>
     <a href="" class="name">SAMEERA</a>
+    <i class="fa-solid fa-bars menu-btn"></i>
     <nav class="navbar">
         <a href="#home" class="active" >Home</a>
         <a href="#about" >About</a>
@@ -45,7 +53,7 @@
     <div>
         <h3>"Hello.."</h3>
         <h1 id="myName">I AM <span>SAMEERA</span><br>MADUSHAN<br>SILVA</h1>
-        <h3>A passionate <span>Software Engineer..</span></h3>
+        <h3><span class="typing"></span></h3>
         <p>
             AS SOMEONE WHO LOVES EXPLORING THE DIGITAL WORLD, I'M ALWAYS EXCITED ABOUT NEW IDEAS AND TRENDS IN TECHNOLOGY. I ENJOY LEARNING ABOUT THE LATEST ADVANCEMENTS AND COOL STUFF HAPPENING IN THE TECH WORLD.
         </p>
@@ -60,25 +68,37 @@
 <section id="about" class="about">
     <div class="about-section">
     <div class="about-img">
-        <img src="assests/images/aboutPic.png" alt="aboutPic.png" title="sameera" width="200" height="200">
+        <img src="assests/images/aboutPic.png" alt="aboutPic.png" title="sameera">
     </div>
 
     <div class="about-content">
         <h1>< <span>ABOUT</span> ME /></h1>
         <h3>ASPIRING SOFTWARE ENGINEER</h3>
         <p>
-            My name is Sameera Madushan. I'm Under graduate student.
+            My name is Sameera Madushan. I'm an Undergraduate student.
             I'm currently learning more about software Engineering,web development and UI/UX designing.
             I like to improve my skills with working on projects. Also i have knowledge about
             web application design,UI/Ux design and mobile applications.       </p>
-        <p>
-            <span>Full Name:</span>
-            Sameera Madushan Silva<br>
-            <span>Email:</span>
-            madushansameera499@gmail.com<br>
-            <span>School:</span>
-            Ananda College Colombo 10
-        </p>
+
+        <ul>
+            <li class="bio1">
+                <span>Name : </span>
+                <span>Sameera Madushan</span>
+            </li>
+            <li class="bio2">
+                <span>Date of Birth : </span>
+                <span>07/05/2002</span>
+            </li>
+            <li class="bio3">
+                <span>Address : </span>
+                <span>Panadura, Sri Lanka.</span>
+            </li>
+            <li class="bio4">
+                <span>Email : </span>
+                <span>madushansameera499@gmail.com</span>
+            </li>
+        </ul>
+
         <a href="" target="_blank" class="btn">Download CV</a>
 
     </div>
@@ -90,86 +110,55 @@
 <section class="education">
     <h1 class="heading">Education & Experience</h1>
 
-    <!--<div class="education-container">
+    <div class="education-container">
         <div class="education-box">
-            <i class="fa fa-graduation-cap"></i>
-            <span>2020 - 2024</span>
-            <h3>Bachelor of Computer Science</h3>
-            <p>
-                I am pursuing my undergraduate degree in Computer Science. I am currently learning more about software Engineering,web development and UI/UX designing.
-            </p>-->
 
-
-    <section id=timeline>
-        <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1" data-aos="fade-right">
-                <div class="head">
-                    <div class="number-box">
-                        <span>01</span>
+            <div class="education-grid">
+                <div class="education-grid-item">
+                    <img src="assests/icons/edcap.png" alt="html" title="html">
+                    <div class="education-item-text">
+                        <h2>IJSE</h2>
+                        <h3>BSc. Computer Science</h3>
+                        <h4>2023 - present</h4>
                     </div>
-                    <h2><span class="small">2023 - Present</span> IJSE institute of Software Engineering</h2>
                 </div>
-                <div class="body">
-                    <p>BSc (Hons.) in Computer Science</p>
-
-                    <img alt="Graphic" src="assests/images/ijse.png">
-                </div>
-            </div>
-
-            <div class="demo-card demo-card--step2" data-aos="fade-left">
-                <div class="head">
-                    <div class="number-box">
-                        <span>02</span>
+                <div class="education-grid-item">
+                    <img src="assests/icons/edcap.png" alt="html" title="html">
+                    <div class="education-item-text">
+                        <h2>Esoft Metro Campus </h2>
+                        <h3>Dip. in English</h3>
+                        <h4>2022 - 2023</h4>
                     </div>
-                    <h2><span class="small">2022-2023</span> ESOFT Metro Campus</h2>
                 </div>
-                <div class="body">
-                    <p>
-                        Diploma In English Language (Pearson)
-                    </p>
-                    <img alt="Graphic" src="assests/images/esoft.jpg">
-                </div>
-            </div>
-
-            <div class="demo-card demo-card--step3" data-aos="fade-right">
-                <div class="head">
-                    <div class="number-box">
-                        <span>03</span>
+                <div class="education-grid-item">
+                    <img src="assests/icons/edcap.png" alt="html" title="html">
+                    <div class="education-item-text">
+                        <h2>Matrix Institute of IT </h2>
+                        <h3>BCS</h3>
+                        <h4>2023 - present</h4>
                     </div>
-                    <h2><span class="small">2022</span> University of Ruhuna</h2>
                 </div>
-                <div class="body">
-                    <p>
-                       Selected for Physical Science Degree in University of Ruhuna
-                    </p>
-
-                    <img alt="Graphic" src="assests/images/uor.png">
-                </div>
-            </div>
-
-            <div class="demo-card demo-card--step4" data-aos="fade-left">
-                <div class="head">
-                    <div class="number-box">
-                        <span>04</span>
+                <div class="education-grid-item">
+                    <img src="assests/icons/edcap.png" alt="html" title="html">
+                    <div class="education-item-text">
+                        <h2>University of Ruhuna </h2>
+                        <h3>Selected for Physical Science</h3>
+                        <h4>2022</h4>
                     </div>
-                    <h2><span class="small"> </span>Ananda College Colombo 10</h2>
                 </div>
-                <div class="body">
-                    <p>
-                        Advanced Level in Physical Science Stream (3 C Passes)<br><br>
-                        Maths - C<br>
-                        Physics - C<br>
-                        Chemistry - C<br>
-                        English - B
-                    </p>
+                <div class="education-grid-item">
+                    <img src="assests/icons/edcap.png" alt="html" title="html">
+                    <div class="education-item-text">
+                        <h2>Ananda College Colombo 10</h2>
+                        <h3>A/L -Physical Stream - 3C Passes</h3>
+                        <h4>2021</h4>
+                    </div>
+                </div>
 
-                    <img alt="Graphic" src="assests/images/Untitled-1.jpg">
-                </div>
             </div>
-
 
         </div>
-    </section>
+    </div>
 
 </section>
 
@@ -355,30 +344,36 @@
 
     <div class="services-container">
         <div class="services-box">
-            <img src="assests/images/web.png" alt="web.png" title="web">
+            <img src="assests/icons/webd.png" alt="web.png" title="web">
             <h3>WEB DEVELOPMENT</h3>
             <p>
                 "Building modern websites that blend creativity with functionality. I am proficient in a variety of programming languages and technologies, including HTML, CSS, JavaScript, PHP, and MySQL which will turn your digital vision into reality"
             </p>
-            <a href="mailto:madushansameera499@gmail.com" target="_blank" class="btn">Get a Quote</a>
-        </div>
+        </div><!--
+            <a href="mailto:madushansameera499@gmail.com" target="_blank" class="btn">Hire Me</a>
+-->
+
 
         <div class="services-box">
-            <img src="assests/images/ui:ux.png" alt="ui:ux.png" title="ui/ux">
+            <img src="assests/icons/ui.png" alt="ui:ux.png" title="ui/ux">
             <h3>UI/UX DESIGN</h3>
             <p>
-                "Designing intuitive and visually stunning user experiences that leave a lasting impression. I will create your designs using latest design tools that are both functional and aesthetically pleasing and that engage and delight your audience well"
+                "Designing intuitive and visually stunning user experiences that leave a lasting impression. I will create your designs using latest design tools that are both functional and aesthetically pleasing and that engage & delight your audience well"
             </p>
+<!--
             <a href="mailto:madushansameera499@gmail.com" target="_blank" class="btn">Get a Quote</a>
+-->
         </div>
 
         <div class="services-box">
-            <img src="assests/images/logoDesign.png" alt="logoDesign.png" title="logoDesign">
-            <h3>LOGO DESIGN</h3>
+            <img src="assests/icons/mobapp.png" alt="logoDesign.png" title="logoDesign">
+            <h3>APP DEVELOPMENT</h3>
             <p>
-                "Let your logo speak volumes. Using latest design tools and techniques I will design you logos that are unique, attractive and that define your brand with simplicity and impact. Elevate your brand with a memorable mark"
+                "I specialize in creating user-friendly applications for various platforms. Leveraging the latest technologies, I build custom solutions to meet your specific needs.I ensure seamless functionality, high performance & delightful user experience."
             </p>
+<!--
             <a href="mailto:madushansameera499@gmail.com" target="_blank" class="btn">Get a Quote</a>
+-->
         </div>
     </div>
 </section>
@@ -386,7 +381,7 @@
 <!-----------------------------Projects Design---------------------------------->
 
 <section id="projects" class="projects">
-    <h1 class="heading">< LATEST PROJECTS /></h1>
+    <h1 class="heading">< PROJECTS /></h1>
 
     <div class="projects-container">
         <div class="projects-box">
@@ -520,6 +515,18 @@
 
 </section>
 
+<!-----------------------------Gallery Design---------------------------------->
+
+<section id="gallery" class="gallery">
+    <h1 class="heading">< GALLERY /></h1>
+
+    <div class="gallery-container">
+
+
+    </div>
+
+</section>
+
 <!-----------------------------Contact Design---------------------------------->
 
 <section id="contact me" class="contact-me">
@@ -528,10 +535,10 @@
         <form action="#">
         <div>
             <p>
-                Have a project in mind?<br>
-                Want to work with me?<br>
-                Or any questions?<br>
-                Please feel free to reach out to me via following:
+                Got a project in mind?<br>
+                Ready to collaborate?<br>
+                Questions? Let's chat!<br>
+                Feel free to contact me via:
             </p>
 
             <div class="social-media">
@@ -559,6 +566,13 @@
         </button>
     </div>
 </footer>
+
+
+
+
+<script src="assests/script/script.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
 
 </body>
 </html>
