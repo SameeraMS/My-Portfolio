@@ -35,13 +35,7 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
-    #timeline .demo-card--step2 {
-        right: -30rem;
-    }
 
-    #timeline .demo-card--step4 {
-        right: -30rem;
-    }
 
 
 }

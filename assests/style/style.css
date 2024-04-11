@@ -692,6 +692,7 @@ p {
 
 .blogs-box:hover{
     cursor: pointer;
+    scale: 1.05;
 }
 
 .blogs-box a{
@@ -737,7 +738,39 @@ p {
     margin-bottom: 3rem;
 }
 
+/*---------------------------Gallery Design-------------------------------------*/
 
+.gallery-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 1rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.gallery-box{
+    height: 400px;
+    width: 100px;
+    background: var(--second-bg-color);
+    border-radius: 2rem;
+    box-shadow: 0 0 1.4rem var(--main-color);
+    max-height: fit-content;
+    overflow: hidden;
+    text-align: center;
+}
+
+.scaled{
+    width: fit-content;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-box img{
+    border-radius: 2rem;
+    object-fit: cover;
+}
 
 /*---------------------------Contact me Design-------------------------------------*/
 

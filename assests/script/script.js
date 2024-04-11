@@ -27,3 +27,14 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true
     });
 });
+
+//gallery scale animation
+function toggleScale(element) {
+    var images = document.querySelectorAll('.gallery-box');
+    images.forEach(function(img) {
+        if (img !== element) {
+            img.classList.remove('scaled'); // Collapse other images
+        }
+    });
+    element.classList.toggle('scaled'); // Toggle the 'scaled' class for the clicked image
+}
