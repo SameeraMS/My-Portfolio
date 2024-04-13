@@ -98,6 +98,40 @@ h1 {
 
 }
 
+
+
+/*---------------------------scrolling Design-------------------------------------*/
+
+.scrolling-page {
+    height: 100vh; /* Full viewport height */
+    background-color: #001634;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateY(0);
+    transition: transform 0.5s ease; /* Smooth transition for scroll effect */
+    overflow-y: auto; /* Enable scrolling for content */
+    z-index: 50;
+}
+
+.scrolling-page.open {
+    transform: translateY(-100%); /* Move the scrolling page up */
+}
+
+.scrolling-page h1 {
+    text-align: center;
+    margin-top: 40vh;
+    margin-bottom: 0;
+    transform: translateY(-50%);
+}
+
+.scrolling-page h1 span {
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+}
+
 /*---------------------------Header Design-------------------------------------*/
 
 header{
@@ -214,6 +248,7 @@ input[type = 'checkbox']:checked~.sun{
 
 
 .home{
+    margin-top: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
