@@ -243,6 +243,10 @@
         padding: 10rem 5% 1rem;
     }
 
+    .fa{
+        margin: 3px 1px;
+    }
+
 }
 
 @media (max-width:617px){
