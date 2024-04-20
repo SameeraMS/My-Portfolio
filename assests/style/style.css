@@ -7,12 +7,14 @@
     --scrol-color: #001634;
 }
 
-body{
+body {
     display: block;
     color-scheme: dark;
-    background: radial-gradient(circle at top center, rgba(6, 59, 111, .5) 0, transparent 50%, transparent 100%);
     background-color: var(--bg-color);
     background-attachment: fixed;
+    /*
+     background: radial-gradient(circle at top center, rgba(6, 59, 111, .5) 0, transparent 50%, transparent 100%);
+     */
 }
 
 body.light{
@@ -22,7 +24,9 @@ body.light{
     --main-color: #8859B6;
     --box-color: #8195b7;
     --scrol-color: #9eb8e5;
+    /*
     background: radial-gradient(circle at top center, rgba(27, 115, 206, 0.5) 0, transparent 50%, transparent 100%);
+    */
     background-color: var(--bg-color);
     background-attachment: fixed;
 }
