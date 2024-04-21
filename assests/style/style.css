@@ -15,6 +15,7 @@ body {
     background-color: var(--bg-color);
     background-attachment: fixed;
 
+    cursor: url("assests/icons/whitedot.png"), auto;
 
 }
 
@@ -41,6 +42,7 @@ body.light{
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    cursor: none;
 }
 
 .btn {
@@ -73,6 +75,7 @@ body.light{
 section{
     padding: 8rem 2% 2rem;
     overflow: hidden;
+
 }
 
 div {
@@ -103,6 +106,42 @@ h1 {
     margin-inline-end: 0;
     color: var(--main-color);
 
+}
+
+
+#cursor{
+    z-index:10000;
+    width:20px;
+    height:20px;
+    border: 2px solid var(--text-color);
+    padding: -10px;
+    position:fixed;
+    pointer-events: none;
+    border-radius:100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cursor>div{
+    width:10px;
+    height:10px;
+    background-color: var(--text-color);
+    border-radius:100%;
+    animation: bubble 2s ease-out infinite;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(0);
+        opacity: 9;
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
 }
 
 
@@ -619,7 +658,7 @@ p {
     padding: 1rem 1rem 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1.4rem var(--main-color);
-    max-height: 350px;
+    height: fit-content;
 
     transition: .5s ease;
     transform: rotate(-2deg);
@@ -800,6 +839,23 @@ p {
     text-align: center;
     margin-bottom: 3rem;
 }
+
+.hover-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* Ensure the image appears above other content */
+}
+
+.hover-target:hover + .hover-image {
+    display: block;
+}
+
+
+
+
+
 
 /*---------------------------Gallery Design-------------------------------------*/
 

@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 75%;
     }
 
     section {
@@ -83,10 +83,62 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+    .blogs-text h4{
+        font-size: 1.3rem;
+    }
+
+    .assignments-box h5{
+        font-size: 1.3rem;
+    }
+
+    .assignments-box h4{
+        font-size: 1.6rem;
+    }
+
+    .assignments-box h5{
+        font-size: 1.3rem;
+    }
+
+    .assignments-box h4{
+        font-size: 1.6rem;
+    }
+
+    .projects-box h5{
+        font-size: 1.3rem;
+    }
+
+    .projects-box h4{
+        font-size: 1.6rem;
+    }
+
+    .services-box p {
+        font-size: 1.7rem;
+    }
+
+    .education-item-text>h2{
+        font-size: 2rem;
+    }
+
+    .education-item-text>h3{
+        font-size: 1.7rem;
+    }
+
+    .education-item-text>h4{
+        font-size: 1.5rem;
+    }
+
+    .certification-box h4{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
 
 }
 
 @media (max-width: 768px) {
+
 
     .menu-btn {
         display: block !important;
@@ -117,7 +169,7 @@
         top: 100%;
         right: 0;
         z-index: 10;
-        background-color: rgba(29, 33, 46, 0.94);
+        background-color: rgba(29, 33, 46, 0.98);
         backdrop-filter: blur(10px);
         border: 2px solid var(--second-bg-color);
         border-top: none;
@@ -125,6 +177,7 @@
         transition: all 0.3s ease-in-out;
         transform-origin: top right;
         transition-delay: 0.01s;
+        letter-spacing: 0.5rem;
 
     }
 
@@ -145,6 +198,9 @@
         flex-direction: column;
     }
 
+    p{
+        font-size: 1.5rem;
+    }
     .home-content h3 {
         font-size: 2.6rem;
     }
@@ -200,6 +256,21 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
+    .education-item-text>h2{
+        font-size: 2rem;
+    }
+
+    .education-item-text>h3{
+        font-size: 1.7rem;
+    }
+
+    .education-item-text>h4{
+        font-size: 1.5rem;
+    }
+
+    .certification-box h4{
+        font-size: 1.5rem;
+    }
     .certification-container{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -220,6 +291,9 @@
         margin-bottom: 3rem;
     }
 
+    .services-box p {
+        font-size: 1.7rem;
+    }
 
     .grid {
 
@@ -230,13 +304,33 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .projects-box h5{
+        font-size: 1.3rem;
+    }
+
+    .projects-box h4{
+        font-size: 1.6rem;
+    }
+
     .assignments-container{
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .assignments-box h5{
+        font-size: 1.3rem;
+    }
+
+    .assignments-box h4{
+        font-size: 1.6rem;
     }
 
     .blogs-box img{
         width: 38%;
         padding-top: 1rem;
+    }
+
+    .blogs-text h4{
+        font-size: 1.3rem;
     }
 
     .contact-me{

@@ -1,3 +1,12 @@
+//cursor
+const cursor = document.querySelector("#cursor");
+document.addEventListener("mousemove", function (e){
+        cursor.style.top = `${e.clientY - cursor.offsetHeight/2}px`;
+        cursor.style.left = `${e.clientX - cursor.offsetWidth/2}px`;
+
+})
+
+
 //menu button
 const menuBtn = document.querySelector('.menu-btn');
 const navToggle = document.querySelector('.navbar');
@@ -67,3 +76,15 @@ const observer=new IntersectionObserver((entries)=>{
 })
 const hiddenElements = document.querySelectorAll('.hidden-left, .hidden-right, .hidden-top, .hidden-bottom');
 hiddenElements.forEach((e1)=>observer.observe(e1));
+
+
+
+const hoverTarget = document.querySelector('.hover-target');
+const hoverImage = document.querySelector('.hover-image');
+
+hoverTarget.addEventListener('mousemove', (e) => {
+    const xOffset = 20; // Adjust this value to set the distance from the mouse pointer
+    const yOffset = 20; // Adjust this value to set the distance from the mouse pointer
+    hoverImage.style.left = e.pageX + xOffset + 'px';
+    hoverImage.style.top = e.pageY + yOffset + 'px';
+});
