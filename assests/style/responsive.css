@@ -41,6 +41,10 @@
 }
 
 @media (max-width: 991px) {
+    #cursor{
+        display: none;
+    }
+
     .header {
         padding: 2rem 2%; /* Adjusted padding */
     }

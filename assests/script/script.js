@@ -66,7 +66,6 @@ window.addEventListener('scroll', function() {
 //animation
 const observer=new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry)
         if (entry.isIntersecting){
             entry.target.classList.add('show');
         }else{
@@ -78,13 +77,39 @@ const hiddenElements = document.querySelectorAll('.hidden-left, .hidden-right, .
 hiddenElements.forEach((e1)=>observer.observe(e1));
 
 
+//
+document.addEventListener('DOMContentLoaded', function() {
+    const hoverSection = document.querySelectorAll('.hover-section');
+    const hoverImage = document.querySelectorAll('.hover-image');
 
-const hoverTarget = document.querySelector('.hover-target');
-const hoverImage = document.querySelector('.hover-image');
+    hoverSection.forEach((section, index) => {
+        const hoverImages = hoverImage[index];
 
-hoverTarget.addEventListener('mousemove', (e) => {
-    const xOffset = 20; // Adjust this value to set the distance from the mouse pointer
-    const yOffset = 20; // Adjust this value to set the distance from the mouse pointer
-    hoverImage.style.left = e.pageX + xOffset + 'px';
-    hoverImage.style.top = e.pageY + yOffset + 'px';
+        section.addEventListener('mousemove', (e) => {
+            const xOffset = 20; // Adjust this value to set the distance from the mouse pointer
+            const yOffset = 20; // Adjust this value to set the distance from the mouse pointer
+            hoverImages.style.left = e.pageX + xOffset + 'px';
+            hoverImages.style.top = e.pageY + yOffset + 'px';
+        });
+    });
 });
+
+
+//rotate gallery
+const $carousel = document.querySelector('.carousel');
+const cellCount = 9;
+let currentIndex =0;
+
+function rotateCarousel(){
+    const angle = currentIndex/cellCount * -360;
+
+    $carousel.style.transform = `translateZ(288px) rotateY(${angle}deg)`;
+}
+
+setInterval(
+    () => {
+        rotateCarousel();
+        currentIndex++;
+    },
+    1500,
+)

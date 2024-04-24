@@ -14,9 +14,6 @@ body {
 
     background-color: var(--bg-color);
     background-attachment: fixed;
-
-    cursor: url("assests/icons/whitedot.png"), auto;
-
 }
 
 body.light{
@@ -840,26 +837,12 @@ p {
     margin-bottom: 3rem;
 }
 
-.hover-image {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 9999; /* Ensure the image appears above other content */
-}
-
-.hover-target:hover + .hover-image {
-    display: block;
-}
-
-
-
 
 
 
 /*---------------------------Gallery Design-------------------------------------*/
 
-.gallery-container{
+/*.gallery-container{
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -889,6 +872,72 @@ p {
 .gallery-box img{
     border-radius: 2rem;
     object-fit: cover;
+}*/
+
+
+.wrapper{
+    border: none;
+    position: relative;
+    width: 410px;
+    height: 340px;
+    display: block;
+    margin: 100px auto;
+    perspective: 1000px;
+}
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.cell{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 115px;
+    top: 100px;
+    border: none;
+    transition: transform 1s, opacity 1s;
+}
+
+.cell img{
+    width: 100%;
+    height: 100%;
+}
+
+.cell:nth-child(1){
+    transform: rotateY(0deg) translateZ(288px);
+}
+
+.cell:nth-child(2){
+    transform: rotateY(40deg) translateZ(288px);
+}
+
+.cell:nth-child(3){
+    transform: rotateY(80deg) translateZ(288px);
+}
+
+.cell:nth-child(4){
+    transform: rotateY(120deg) translateZ(288px);
+}
+.cell:nth-child(5){
+    transform: rotateY(160deg) translateZ(288px);
+}
+.cell:nth-child(6){
+    transform: rotateY(200deg) translateZ(288px);
+}
+.cell:nth-child(7){
+    transform: rotateY(240deg) translateZ(288px);
+}
+.cell:nth-child(8){
+    transform: rotateY(280deg) translateZ(288px);
+}
+.cell:nth-child(9){
+    transform: rotateY(320deg) translateZ(288px);
 }
 
 /*---------------------------Contact me Design-------------------------------------*/
