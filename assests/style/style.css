@@ -694,6 +694,16 @@ p {
     text-align: center;
 }
 
+.hover-image {
+    display: none;
+    position: fixed;
+    z-index: 9999; /* Ensure the image appears above other content */
+}
+
+.hover-section:hover + .hover-image {
+    display: block;
+}
+
 
 
 /*---------------------------Assignments Design-------------------------------------*/

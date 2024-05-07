@@ -78,7 +78,7 @@ hiddenElements.forEach((e1)=>observer.observe(e1));
 
 
 //
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     const hoverSection = document.querySelectorAll('.hover-section');
     const hoverImage = document.querySelectorAll('.hover-image');
 
@@ -92,7 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
             hoverImages.style.top = e.pageY + yOffset + 'px';
         });
     });
-});
+});*/
+
 
 
 //rotate gallery
