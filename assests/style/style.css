@@ -136,7 +136,7 @@ h1 {
         opacity: 9;
     }
     100% {
-        transform: scale(5);
+        transform: scale(4);
         opacity: 0;
     }
 }
